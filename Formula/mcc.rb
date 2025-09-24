@@ -5,21 +5,21 @@
 class Mcc < Formula
   desc "A CLI tool to manage and switch between multiple Kubernetes cluster configs."
   homepage "https://github.com/onggizam/mcc"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onggizam/mcc/releases/download/v0.1.0/mcc_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "b29c7b90c8a0cf4e3f85dd0e9e37b2c8a4d9d90405e032a88f53705407898945"
+      url "https://github.com/onggizam/mcc/releases/download/v0.2.0/mcc_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "a088f4a2b3b7ff83b00cde49178f6e7c1a4c92a2ef563524745bf0b69b5a701b"
 
       def install
         bin.install "mcc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onggizam/mcc/releases/download/v0.1.0/mcc_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "cdff56463d7c1c6e118f083a831b369eb303b01cdfff04c15121f7dd026dadb6"
+      url "https://github.com/onggizam/mcc/releases/download/v0.2.0/mcc_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "1b560360b23e8b323deac42c4281578bc95a08ad505096f7f35035ede15c2b54"
 
       def install
         bin.install "mcc"
@@ -29,15 +29,15 @@ class Mcc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onggizam/mcc/releases/download/v0.1.0/mcc_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "1cd2df222ae64e0876cbe068b933b950f36941af3ab73297e5548a64147e771c"
+      url "https://github.com/onggizam/mcc/releases/download/v0.2.0/mcc_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "979947764876ddc8b19d5950e5a4cb775c3ffc692677f2b671460b8051dfbd05"
       def install
         bin.install "mcc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onggizam/mcc/releases/download/v0.1.0/mcc_0.1.0_Linux_arm64.tar.gz"
-      sha256 "a78f279717774211663c0f93ff7563d4b697c4c1c11a6ed1d3b313c907584520"
+      url "https://github.com/onggizam/mcc/releases/download/v0.2.0/mcc_0.2.0_Linux_arm64.tar.gz"
+      sha256 "28108573b5660a64dbfbad4a1b75a0b969caef591032d42d334484112b81e18d"
       def install
         bin.install "mcc"
       end
